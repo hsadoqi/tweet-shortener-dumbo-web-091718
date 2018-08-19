@@ -14,6 +14,5 @@ def dictionary {
 }
 
 def word_substituter(string)
-  word_substituter.each do |x|
 
 
