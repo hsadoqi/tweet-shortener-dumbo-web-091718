@@ -2,5 +2,7 @@
 
 def dictionary {
   "hello" => "hi", 
-  "to, "
+  "to" => 2, 
+  "two" => 2, 
+  
 }
