@@ -1,6 +1,7 @@
 # Write your code here.
 
-def dictionary {
+def dictionary 
+  dictionary = {
   "hello" => "hi", 
   "to" => "2", 
   "two" => "2",
@@ -13,6 +14,18 @@ def dictionary {
   "and" => "&"
 }
 
-def word_substituter(string)
+def word_substituter(tweet)
+  tweet_arr = tweet.split
+  
+  tweet_arr.collect! do |word|
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
+    else
+      word
+    end
+  end
+  tweet_arr.join(" ")
+end
+
 
 
